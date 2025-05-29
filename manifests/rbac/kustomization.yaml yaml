@@ -1,0 +1,3 @@
+resources:
+  - argocd-apps-csidriver-access.yaml
+  - argocd-apps-csidriver-access-binding.yaml
