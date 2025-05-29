@@ -6,7 +6,7 @@ metadata:
 spec:
   description: Application Argo CD Project
   sourceRepos:
-    - https://github.com/nagarajkrisjay/gitops-app.git
+    - https://github.com/nagarajkrisjay/gitops-apps.git
   destinations:
     - namespace: '*'
       server: https://kubernetes.default.svc
