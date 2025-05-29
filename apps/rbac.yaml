@@ -6,7 +6,7 @@ metadata:
 spec:
   project: apps-project
   source:
-    repoURL: https://github.com/<your-username>/gitops-apps.git
+    repoURL: https://github.com/nagarajkrisjay/gitops-apps.git
     targetRevision: HEAD
     path: manifests/rbac
   destination:
