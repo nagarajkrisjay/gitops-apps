@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: pro-bootstrap
+  namespace: argocd-apps
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/nagarajkrisjay/gitops-apps.git
+    targetRevision: HEAD
+    path: projects
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: argocd-apps
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
